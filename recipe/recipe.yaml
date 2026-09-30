@@ -11,7 +11,7 @@ source:
   sha256: 5a98e9b17553106e80780f99ad3bfc74159a86d729831ef1641e2fb138bd5840
 
 build:
-  number: 0
+  number: 1
   noarch: python
   python:
     entry_points:
@@ -44,7 +44,7 @@ tests:
       pip_check: true
       python_version:
         - ${{ python_min }}.*
-        - "*"
+        - '*'
   - script:
       - pixi-browse --help
       - pixi-browse --version
